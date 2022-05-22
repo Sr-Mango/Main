@@ -163,7 +163,7 @@ function Library:Window(title)
 
 		TabName.Name = "TabName"
 		TabName.Parent = TabButton
-		TabName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TabName.BackgroundColor3 = Color3.fromRGB(255, 129, 26)
 		TabName.BackgroundTransparency = 1.000
 		TabName.Position = UDim2.new(0.0865384638, 0, 0.189560443, 0)
 		TabName.Size = UDim2.new(0, 71, 0, 18)
@@ -385,7 +385,7 @@ function Library:Window(title)
 
 			Slider.Name = "Slider"
 			Slider.Parent = SliderBack
-			Slider.BackgroundColor3 = Color3.fromRGB(1, 255, 120)
+			Slider.BackgroundColor3 = Color3.fromRGB(255, 129, 26)
 			Slider.Size = UDim2.new((start or 0) / max, 0, 1, 0);
 
 			UICorner_6.CornerRadius = UDim.new(0, 3)
