@@ -155,7 +155,7 @@ function Library:Window(title)
 		TabButton.AutoButtonColor = false
 		TabButton.Font = Enum.Font.TitilliumWeb
 		TabButton.Text = ""
-		TabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TabButton.TextColor3 = Color3.fromRGB(255, 129, 26)
 		TabButton.TextSize = 14.000
 
 		UICorner.CornerRadius = UDim.new(0, 1)
