@@ -147,7 +147,7 @@ function Library:Window(title)
 
 		TabButton.Name = "TabButton"
 		TabButton.Parent = TabHolder
-		TabButton.BackgroundColor3 = Library.TabCount == 0 and Color3.fromRGB(1, 255, 120) or Color3.fromRGB(40, 40, 40)
+		TabButton.BackgroundColor3 = Library.TabCount == 0 and Color3.fromRGB(255, 129, 26) or Color3.fromRGB(40, 40, 40)
 		TabButton.BorderSizePixel = 0
 		TabButton.ClipsDescendants = true
 		TabButton.Position = UDim2.new(0.0357142873, 0, 0.024630541, 0)
@@ -155,7 +155,7 @@ function Library:Window(title)
 		TabButton.AutoButtonColor = false
 		TabButton.Font = Enum.Font.TitilliumWeb
 		TabButton.Text = ""
-		TabButton.TextColor3 = Color3.fromRGB(255, 129, 26)
+		TabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		TabButton.TextSize = 14.000
 
 		UICorner.CornerRadius = UDim.new(0, 1)
