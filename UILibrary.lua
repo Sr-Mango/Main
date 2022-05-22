@@ -1,5 +1,5 @@
 for _, v in pairs(game.CoreGui:GetChildren()) do
-	if v.Name == "UILib" then
+	if v.Name == "KurumiLibrary" then
 		v:Destroy()
 	end
 end
@@ -17,7 +17,7 @@ function Library:Window(title)
 	local Mini = Instance.new("TextButton")
 	local UICorner_9 = Instance.new("UICorner")
 
-	ScreenGui.Name = "UILib"
+	ScreenGui.Name = "KurumiLibrary"
 	ScreenGui.Parent = game.CoreGui
 	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -60,7 +60,7 @@ function Library:Window(title)
 	Title.BackgroundTransparency = 1.000
 	Title.Position = UDim2.new(0.0161290318, 0, 0.103448279, 0)
 	Title.Size = UDim2.new(0, 162, 0, 23)
-	Title.Font = Enum.Font.GothamSemibold
+	Title.Font = Enum.Font.TitilliumWeb
 	Title.Text = title
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Title.TextScaled = true
@@ -75,7 +75,7 @@ function Library:Window(title)
 	Mini.Position = UDim2.new(0.933179677, 0, 0.137931034, 0)
 	Mini.Size = UDim2.new(0, 21, 0, 19)
 	Mini.ZIndex = 2
-	Mini.Font = Enum.Font.SourceSans
+	Mini.Font = Enum.Font.TitilliumWeb
 	Mini.Text = ""
 	Mini.TextColor3 = Color3.fromRGB(0, 0, 0)
 	Mini.TextSize = 14.000
@@ -153,7 +153,7 @@ function Library:Window(title)
 		TabButton.Position = UDim2.new(0.0357142873, 0, 0.024630541, 0)
 		TabButton.Size = UDim2.new(0, 104, 0, 28)
 		TabButton.AutoButtonColor = false
-		TabButton.Font = Enum.Font.SourceSans
+		TabButton.Font = Enum.Font.TitilliumWeb
 		TabButton.Text = ""
 		TabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		TabButton.TextSize = 14.000
@@ -167,7 +167,7 @@ function Library:Window(title)
 		TabName.BackgroundTransparency = 1.000
 		TabName.Position = UDim2.new(0.0865384638, 0, 0.189560443, 0)
 		TabName.Size = UDim2.new(0, 71, 0, 18)
-		TabName.Font = Enum.Font.Gotham
+		TabName.Font = Enum.Font.TitilliumWeb
 		TabName.Text = title
 		TabName.TextColor3 = Library.TabCount == 0 and Color3.fromRGB(60, 60, 60) or Color3.fromRGB(255, 255, 255)
 		TabName.TextScaled = true
@@ -234,7 +234,7 @@ function Library:Window(title)
 			Button.ClipsDescendants = true
 			Button.Position = UDim2.new(0.0355805233, 0, 0.0252525248, 0)
 			Button.Size = UDim2.new(0, 248, 0, 28)
-			Button.Font = Enum.Font.SourceSans
+			Button.Font = Enum.Font.TitilliumWeb
 			Button.Text = ""
 			Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 			Button.TextSize = 14.000
@@ -251,7 +251,7 @@ function Library:Window(title)
 			ButtonName.BackgroundTransparency = 1.000
 			ButtonName.Position = UDim2.new(0, 0,0.143, 0)
 			ButtonName.Size = UDim2.new(0, 248,0, 19)
-			ButtonName.Font = Enum.Font.Gotham
+			ButtonName.Font = Enum.Font.TitilliumWeb
 			ButtonName.Text = name
 			ButtonName.TextColor3 = Color3.fromRGB(255, 255, 255)
 			ButtonName.TextScaled = true
@@ -310,7 +310,7 @@ function Library:Window(title)
 			Toggle.ClipsDescendants = true
 			Toggle.Size = UDim2.new(0, 248, 0, 28)
 			Toggle.ZIndex = 2
-			Toggle.Font = Enum.Font.SourceSans
+			Toggle.Font = Enum.Font.TitilliumWeb
 			Toggle.Text = ""
 			Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
 			Toggle.TextSize = 14.000
@@ -330,7 +330,7 @@ function Library:Window(title)
 			ToggleName.BackgroundTransparency = 1.000
 			ToggleName.Position = UDim2.new(0.149193555, 0, 0.142857149, 0)
 			ToggleName.Size = UDim2.new(0, 248, 0, 19)
-			ToggleName.Font = Enum.Font.Gotham
+			ToggleName.Font = Enum.Font.TitilliumWeb
 			ToggleName.Text = name
 			ToggleName.TextColor3 = Color3.fromRGB(255, 255, 255)
 			ToggleName.TextScaled = true
@@ -375,7 +375,7 @@ function Library:Window(title)
 			SliderName.Position = UDim2.new(0.0282258056, 0, 0.178571433, 0)
 			SliderName.Size = UDim2.new(0, 80, 0, 19)
 			SliderName.ZIndex = 2
-			SliderName.Font = Enum.Font.Gotham
+			SliderName.Font = Enum.Font.TitilliumWeb
 			SliderName.Text = name
 			SliderName.TextColor3 = Color3.fromRGB(255, 255, 255)
 			SliderName.TextScaled = true
@@ -397,7 +397,7 @@ function Library:Window(title)
 			SliderValue.BackgroundTransparency = 1.000
 			SliderValue.Position = UDim2.new(0.802419364, 0, 0.178571433, 0)
 			SliderValue.Size = UDim2.new(0, 49, 0, 19)
-			SliderValue.Font = Enum.Font.Gotham
+			SliderValue.Font = Enum.Font.TitilliumWeb
 			SliderValue.Text = tostring(start and math.floor((start / max) * (max - min) + min) or 0) .. "/" .. max
 			SliderValue.TextColor3 = Color3.fromRGB(255, 255, 255)
 			SliderValue.TextScaled = true
@@ -456,7 +456,7 @@ function Library:Window(title)
 			Box.ClipsDescendants = true
 			Box.Position = UDim2.new(0.735, 0, 0.1, 0)
 			Box.Size = UDim2.new(0, 63, 0, 23)
-			Box.Font = Enum.Font.Gotham
+			Box.Font = Enum.Font.TitilliumWeb
 			Box.Text = string
 			Box.TextColor3 = Color3.fromRGB(255, 255, 255)
 			Box.TextSize = 16.000
@@ -476,7 +476,7 @@ function Library:Window(title)
 			BoxName.BackgroundTransparency = 1.000
 			BoxName.Position = UDim2.new(0.0282258056, 0, 0.142857149, 0)
 			BoxName.Size = UDim2.new(0, 80, 0, 19)
-			BoxName.Font = Enum.Font.Gotham
+			BoxName.Font = Enum.Font.TitilliumWeb
 			BoxName.Text = name
 			BoxName.TextColor3 = Color3.fromRGB(255, 255, 255)
 			BoxName.TextScaled = true
@@ -494,7 +494,7 @@ function Library:Window(title)
 			Label.BackgroundTransparency = 1.000
 			Label.Position = UDim2.new(0.0355805233, 0, 0.603524208, 0)
 			Label.Size = UDim2.new(0, 248, 0, 20)
-			Label.Font = Enum.Font.Gotham
+			Label.Font = Enum.Font.TitilliumWeb
 			Label.Text = text
 			Label.TextColor3 = Color3.fromRGB(255, 255, 255)
 			Label.TextScaled = true
