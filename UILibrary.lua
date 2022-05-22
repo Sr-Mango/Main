@@ -214,7 +214,7 @@ function Library:Window(title)
 					v.TabName.TextColor3 = Color3.fromRGB(255, 255, 255)
 				end
 			end
-			TabButton.BackgroundColor3 = Color3.fromRGB(1, 255, 120)
+			TabButton.BackgroundColor3 = Color3.fromRGB(255, 129, 26)
 			TabName.TextColor3 = Color3.fromRGB(60, 60, 60)
 		end)
 
