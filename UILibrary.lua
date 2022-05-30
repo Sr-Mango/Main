@@ -1,3 +1,5 @@
+-- Not made by be, copped from someone in v3rmillion i'll paste username if i can find it
+
 for _, v in pairs(game.CoreGui:GetChildren()) do
 	if v.Name == "KurumiLibrary" then
 		v:Destroy()
